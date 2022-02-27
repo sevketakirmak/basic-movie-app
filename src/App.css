@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+body {
+    font-family: Titillium Web;
+    margin: 0;
+    background-color: #1b263b;
+    color: #fff0f3;
+}
+.detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #fff0f3;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+.movie{
+    width: 35%;
+}
+.movie img{
+    width: 100%;
+    height: 300px;
+    
+}
+p{
+    height: 100px;
+    overflow: hidden;
+}
+button{
+    height: 40px;
+    text-transform: uppercase;
+    background-color: #d64045;
+    color: #fff0f3;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+.text{
+    width: 65%;
+    padding: 10px;
+    padding-right: 0;
+}
+.slide h2{
+    margin: 20px 25px 10px 25px;
+
+}
+.slick-list {margin: 0 -25px;}
+.slick-slide>div {padding: 0 25px; padding-bottom: 20px;}
+.slide a{
+    color: #adadad;
+    text-decoration: none;
+}
+/*responsive*/
+@media only screen and (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (max-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
